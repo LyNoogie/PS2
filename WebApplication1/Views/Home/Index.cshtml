@@ -1,0 +1,215 @@
+﻿<!-- Name: Khanhly Nguyen u0822847
+    This is an implementation of the professor view for the learning objective
+    web page. Each learning objective text panel is a dropdown button to view
+    evaluation metrics for each learning objective and both good and bad student
+    submission examples are given for each.-->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Indication of the professor we're looking at -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Instructor View</h1>
+        <p class="lead">MST6600 Applied Statistical Techniques</p>
+    </div>
+</div>
+<div id="content">
+    <div id="content_main">
+        <!-- Button functionality will allow user to add evaluation metrics-->
+        <!-- Collapsible -->
+        <div class="dropdown"
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+                <h3>LO1</h3>
+            </a>
+        </div>
+
+        <div class="collapse" id="collapse">
+            <div class="card card-body">
+                <p> Understand the differences between Exploratory Data Analysis (EDA) and classical, quantitative statistical analysis</p>
+                <!-- Sub Collapsible -->
+                <div class="dropdown"
+                     <a class="btn btn-sm" data-toggle="collapse" href="#subCollapse" role="button" aria-expanded="false" aria-controls="subCollapse">
+                         <h4>Evaluation Metrics</h4>
+                     </a>
+                </div>
+                <div class="collapse" id="subCollapse">
+                    <div class="card card-body">
+                        <a href="~/files/HW_Desrciption.pdf">Homework0</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Poor Example</a><br />
+                        <p>&nbsp;</p>
+                        <a href="~/files/HW_Desrciption.pdf">Homework1</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Bad Example</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second learning objective -->
+        <div class="dropdown"
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse">
+                <h3>LO2</h3>
+            </a>
+        </div>
+
+        <div class="collapse" id="collapse2">
+            <div class="card card-body">
+                <p>Apply graphical EDA techniques (including: scatter plots, box plots, histograms, probability plots, residual plots, and mean plots) to representative data sets using RStudio.</p>
+                <!-- Sub Collapsible -->
+                <div class="dropdown"
+                     <a class="btn btn-sm" data-toggle="collapse" href="#subCollapse2" role="button" aria-expanded="false" aria-controls="subCollapse2">
+                         <h4>Evaluation Metrics</h4>
+                     </a>
+                </div>
+                <div class="collapse" id="subCollapse2">
+                    <div class="card card-body">
+                        <a href="~/files/HW_Desrciption.pdf">Homework2</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Poor Example</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third learning objective -->
+        <div class="dropdown"
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse">
+                <h3>LO3</h3>
+            </a>
+        </div>
+
+        <div class="collapse" id="collapse3">
+            <div class="card card-body">
+                <p> Evaluate data using classical, quantitative statistical techniques to establish the uncertainty of a point estimate</p>
+                <!-- Sub Collapsible -->
+                <div class="dropdown"
+                     <a class="btn btn-sm" data-toggle="collapse" href="#subCollapse3" role="button" aria-expanded="false" aria-controls="subCollapse3">
+                         <h4>Evaluation Metrics</h4>
+                     </a>
+                </div>
+                <div class="collapse" id="subCollapse3">
+                    <div class="card card-body">
+                        <a href="~/files/HW_Desrciption.pdf">Homework3</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Poor Example</a><br />
+                        <p>&nbsp;</p>
+                        <a href="~/files/exam.pdf">Midterm 1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Learning Objective -->
+        <div class="dropdown"
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse">
+                <h3>LO4</h3>
+            </a>
+        </div>
+
+        <div class="collapse" id="collapse4">
+            <div class="card card-body">
+                <p> Construct a hypothesis test to refute a specific claim about a population parameter based on the sample data</p>
+                <!-- Sub Collapsible -->
+                <div class="dropdown"
+                     <a class="btn btn-sm" data-toggle="collapse" href="#subCollapse4" role="button" aria-expanded="false" aria-controls="subCollapse4">
+                         <h4>Evaluation Metrics</h4>
+                     </a>
+                </div>
+                <div class="collapse" id="subCollapse4">
+                    <div class="card card-body">
+                        <a href="~/files/HW_Desrciption.pdf">Homework4</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Poor Example</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth Learning Objective -->
+        <div class="dropdown"
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse">
+                <h3>LO5</h3>
+            </a>
+        </div>
+
+        <div class="collapse" id="collapse5">
+            <div class="card card-body">
+                <p> Compile EDA and quantitative statistics into a report for communicating insight into data</p>
+                <!-- Sub Collapsible -->
+                <div class="dropdown"
+                     <a class="btn btn-sm" data-toggle="collapse" href="#subCollapse5" role="button" aria-expanded="false" aria-controls="subCollapse5">
+                         <h4>Evaluation Metrics</h4>
+                     </a>
+                </div>
+                <div class="collapse" id="subCollapse5">
+                    <div class="card card-body">
+                        <a href="~/files/HW_Desrciption.pdf">Homework5</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Poor Example</a>
+                        <p>&nbsp;</p>
+                        <a href="~/files/exam.pdf">Midterm 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth Learning Objective-->
+        <div class="dropdown"
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse">
+                <h3>LO6</h3>
+            </a>
+        </div>
+
+        <div class="collapse" id="collapse6">
+            <div class="card card-body">
+                <p> Present complex data in an organized and concise manner</p>
+                <!-- Sub Collapsible -->
+                <div class="dropdown"
+                     <a class="btn btn-sm" data-toggle="collapse" href="#subCollapse6" role="button" aria-expanded="false" aria-controls="subCollapse6">
+                         <h4>Evaluation Metrics</h4>
+                     </a>
+                </div>
+                <div class="collapse" id="subCollapse6">
+                    <div class="card card-body">
+                        <a href="~/files/HW_Desrciption.pdf">Homework6</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Poor Example</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Last Learning Objective-->
+        <div class="dropdown"
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapse">
+                <h3>LO7</h3>
+            </a>
+        </div>
+
+        <div class="collapse" id="collapse7">
+            <div class="card card-body">
+                <p> Manipulate complex data within the R/RStudio software environment as required for graphical and numerical analysis</p>
+                <!-- Sub Collapsible -->
+                <div class="dropdown"
+                     <a class="btn btn-sm" data-toggle="collapse" href="#subCollapse7" role="button" aria-expanded="false" aria-controls="subCollapse7">
+                         <h4>Evaluation Metrics</h4>
+                     </a>
+                </div>
+                <div class="collapse" id="subCollapse7">
+                    <div class="card card-body">
+                        <a href="~/files/HW_Desrciption.pdf">Homework7</a><br />
+                        <a href="~/files/GoodHW.pdf">Good Example</a><br />
+                        <a href="~/files/BadHW.pdf">Poor Example</a>
+                        <p>&nbsp;</p>
+                        <a href="~/files/exam.pdf">Final</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="footer"><h3><a href="http://www.bryantsmith.com">florida web design</a></h3></div>
+</div>
+
+

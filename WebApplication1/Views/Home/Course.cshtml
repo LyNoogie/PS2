@@ -1,0 +1,76 @@
+﻿<!-- Name: Khanhly Nguyen U0822847
+    This is the implementation of the courses and department chair
+    preiew. There is an indication of how far the professor is within
+    the completion of their learning objectives.-->
+@{
+    ViewData["Title"] = "Course";
+}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/css/Learning_Outcomes.css" />
+    <title>Applied Statistical Techniques</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="content">
+
+            <div id="content_main">
+                <!-- Header for the name of the course -->
+                <h2>Role: Department Chair View</h2>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <h3><a asp-area="" asp-controller="Home" asp-action="Index">MST 6600</a></h3>
+                <!-- Name of the course -->
+                <p>Applied Statistical Techniques</p>
+                Completion:
+                <progress value="90" max="100"></progress> 90%
+
+                <p>&nbsp;</p>
+                <h3><a asp-area="" asp-controller="Home" asp-action="Index">MST 6963</a></h3>
+                <!-- Name of the course -->
+                <p>Special Topics</p>
+                <!-- Course completion percentage -->
+                Completion:
+                <progress value="65" max="100"></progress> 65%
+
+                <p>&nbsp;</p>
+                <h3><a asp-area="" asp-controller="Home" asp-action="Index">MST 6974</a></h3>
+                <!-- Name of the course -->
+                <p>Project Planning</p>
+                <!-- Course completion percentage -->
+                Completion:
+                <progress value="75" max="100"></progress> 75%
+
+                <p>&nbsp;</p>
+                <h3><a asp-area="" asp-controller="Home" asp-action="Index">MST 6975</a></h3>
+                <!-- Name of the course -->
+                <p>Professional Project</p>
+                <!-- Course completion percentage -->
+                Completion:
+                <progress value="100" max="100"></progress> 100%
+
+                <p>&nbsp;</p>
+                <h3><a asp-area="" asp-controller="Home" asp-action="Index">MST 6980</a></h3>
+                <!-- Name of the course -->
+                <p>Faculty Consultation</p>
+                Completion:
+                <progress value="100" max="100"></progress> 100%
+
+                <p>&nbsp;</p>
+                <h3><a asp-area="" asp-controller="Home" asp-action="Index">MST 6021</a></h3>
+                <!-- Name of the course -->
+                <p>Strategy and Marketing</p>
+                Completion:
+                <!-- Course completion percentage -->
+                <progress value="25" max="100"></progress> 25%
+                <p>&nbsp;</p>
+
+            </div>
+            <div id="content_bottom"></div>
+
+        </div>
+    </div>
+</body>
